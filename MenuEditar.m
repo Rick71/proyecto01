@@ -22,6 +22,7 @@
     self.TxtEdadEdit.text = arregloGlobal[2][imagen];
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
