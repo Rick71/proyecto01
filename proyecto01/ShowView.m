@@ -38,4 +38,10 @@
 
 - (IBAction)btnAnterior:(id)sender {
     [self performSegueWithIdentifier:@"LigaBienvenido" sender:self];}
+
+- (IBAction)MenosTransp:(id)sender {
+}
+
+- (IBAction)MasTransp:(id)sender {
+}
 @end

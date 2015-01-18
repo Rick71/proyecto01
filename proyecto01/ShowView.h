@@ -14,5 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *EdadShowView;
 
 - (IBAction)btnAnterior:(id)sender;
+- (IBAction)MenosTransp:(id)sender;
+- (IBAction)MasTransp:(id)sender;
 
 @end
