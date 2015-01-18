@@ -34,7 +34,7 @@
                                 <rect key="frame" x="82" y="457" width="59" height="30"/>
                                 <color key="backgroundColor" red="0.36809864949999999" green="0.16668895319999999" blue="0.78993055560000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="&lt;---">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -45,7 +45,7 @@
                                 <rect key="frame" x="179" y="457" width="59" height="30"/>
                                 <color key="backgroundColor" red="0.36809864949999999" green="0.16668895319999999" blue="0.78993055560000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="---&gt;">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -143,7 +143,7 @@
                                     <action selector="MasTransp:" destination="07U-u3-heP" eventType="touchUpInside" id="2Ef-Kb-S0t"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vKu-lx-0ZE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vKu-lx-0ZE" userLabel="ImageView">
                                 <rect key="frame" x="-6" y="99" width="326" height="148"/>
                             </imageView>
                         </subviews>

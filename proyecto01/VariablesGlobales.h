@@ -10,6 +10,8 @@
 
 NSMutableArray *arregloImagenes;
 int imagen;
+int longitudArray;
+float transparency;
 
 @interface VariablesGlobales : NSObject
 

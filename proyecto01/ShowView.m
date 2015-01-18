@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    transparency = 1.0;
     self.ImageShowView.image = [UIImage imageNamed:arregloImagenes[imagen]];
 }
 
@@ -40,8 +42,11 @@
     [self performSegueWithIdentifier:@"LigaBienvenido" sender:self];}
 
 - (IBAction)MenosTransp:(id)sender {
+    transparency = transparency - 0.2;
+    [self.ImageShowView setAlpha:transparency];
 }
 
 - (IBAction)MasTransp:(id)sender {
-}
+    transparency = transparency + 0.2;
+    [self.ImageShowView setAlpha:transparency];}
 @end
