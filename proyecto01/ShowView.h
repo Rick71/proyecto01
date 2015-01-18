@@ -12,9 +12,13 @@
 @property (weak, nonatomic) IBOutlet UIImageView *ImageShowView;
 @property (weak, nonatomic) IBOutlet UILabel *NombreShowView;
 @property (weak, nonatomic) IBOutlet UILabel *EdadShowView;
+@property (weak, nonatomic) IBOutlet UITextField *EdadTxt;
+@property (weak, nonatomic) IBOutlet UITextField *NombreTxt;
 
 - (IBAction)btnAnterior:(id)sender;
 - (IBAction)MenosTransp:(id)sender;
 - (IBAction)MasTransp:(id)sender;
+- (IBAction)btnEditar:(id)sender;
+
 
 @end

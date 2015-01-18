@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 
 NSMutableArray *arregloImagenes;
+NSMutableArray *arregloNombre;
+NSMutableArray *arregloEdad;
+NSMutableArray *arregloGlobal;
+
+
 int imagen;
 int longitudArray;
 float transparency;

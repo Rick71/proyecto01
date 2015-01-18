@@ -31,6 +31,30 @@
                          nil
                          ];
     
+    arregloNombre = [[NSMutableArray alloc]
+                       initWithObjects:@"Familia simpson", @"Homero simpson",
+                       @"Marge simpson",
+                       @"Bart simpson",
+                       @"Lisa simpson",
+                       @"Maggie simpson",
+                       nil
+                       ];
+    
+    arregloEdad = [[NSMutableArray alloc]
+                       initWithObjects:@"simpson", @"38",
+                       @"35",
+                       @"10",
+                       @"7",
+                       @"2",
+                       nil
+                       ];
+
+
+arregloGlobal = [NSMutableArray arrayWithObjects:
+                 arregloImagenes,
+                 arregloNombre,
+                 arregloEdad,
+                 nil];
 }
 
 - (void)didReceiveMemoryWarning {

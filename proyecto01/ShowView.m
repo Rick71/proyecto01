@@ -20,6 +20,10 @@
     // Do any additional setup after loading the view.
     
     transparency = 1.0;
+    self.NombreTxt.text = arregloGlobal[1][imagen];
+    self.EdadTxt.text = arregloGlobal[2][imagen];
+    
+    
     self.ImageShowView.image = [UIImage imageNamed:arregloImagenes[imagen]];
 }
 
@@ -49,4 +53,7 @@
 - (IBAction)MasTransp:(id)sender {
     transparency = transparency + 0.2;
     [self.ImageShowView setAlpha:transparency];}
+
+- (IBAction)btnEditar:(id)sender {
+    [self performSegueWithIdentifier:@"LigaMenuEditar" sender:self];}
 @end

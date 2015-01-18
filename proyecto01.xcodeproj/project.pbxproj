@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D9A30381A6BA1DC005C34BD /* MenuEditar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A30371A6BA1DC005C34BD /* MenuEditar.m */; };
 		1DE30A6B1A6B48F5008FA8AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE30A6A1A6B48F5008FA8AF /* main.m */; };
 		1DE30A6E1A6B48F5008FA8AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE30A6D1A6B48F5008FA8AF /* AppDelegate.m */; };
 		1DE30A711A6B48F5008FA8AF /* Bienvenido.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE30A701A6B48F5008FA8AF /* Bienvenido.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D9A30361A6BA1DC005C34BD /* MenuEditar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuEditar.h; path = ../MenuEditar.h; sourceTree = "<group>"; };
+		1D9A30371A6BA1DC005C34BD /* MenuEditar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuEditar.m; path = ../MenuEditar.m; sourceTree = "<group>"; };
 		1DE30A651A6B48F5008FA8AF /* proyecto01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyecto01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE30A691A6B48F5008FA8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DE30A6A1A6B48F5008FA8AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				1DE30AA11A6B5477008FA8AF /* VariablesGlobales.m */,
 				1DE30AA31A6B6506008FA8AF /* ShowView.h */,
 				1DE30AA41A6B6506008FA8AF /* ShowView.m */,
+				1D9A30361A6BA1DC005C34BD /* MenuEditar.h */,
+				1D9A30371A6BA1DC005C34BD /* MenuEditar.m */,
 				1DE30A721A6B48F5008FA8AF /* Main.storyboard */,
 				1DE30A751A6B48F5008FA8AF /* Images.xcassets */,
 				1DE30A771A6B48F5008FA8AF /* LaunchScreen.xib */,
@@ -266,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DE30AA21A6B5477008FA8AF /* VariablesGlobales.m in Sources */,
+				1D9A30381A6BA1DC005C34BD /* MenuEditar.m in Sources */,
 				1DE30A711A6B48F5008FA8AF /* Bienvenido.m in Sources */,
 				1DE30A6E1A6B48F5008FA8AF /* AppDelegate.m in Sources */,
 				1DE30AA51A6B6506008FA8AF /* ShowView.m in Sources */,
@@ -460,6 +466,7 @@
 				1DE30A8A1A6B48F5008FA8AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DE30A8B1A6B48F5008FA8AF /* Build configuration list for PBXNativeTarget "proyecto01Tests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				1DE30A8D1A6B48F5008FA8AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

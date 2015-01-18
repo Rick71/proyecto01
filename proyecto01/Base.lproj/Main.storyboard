@@ -63,6 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="452" y="361"/>
         </scene>
         <!--Show View-->
         <scene sceneID="cTV-kB-dMS">
@@ -87,26 +88,26 @@
                                     <action selector="btnAnterior:" destination="07U-u3-heP" eventType="touchUpInside" id="wMB-16-2We"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Nombre:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqh-H7-zDE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Nombre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqh-H7-zDE">
                                 <rect key="frame" x="0.0" y="291" width="320" height="50"/>
                                 <color key="backgroundColor" red="0.36809864949999999" green="0.16668895319999999" blue="0.78993055560000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="   Edad:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9A-gB-MiP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="   Edad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9A-gB-MiP">
                                 <rect key="frame" x="0.0" y="353" width="320" height="44"/>
                                 <color key="backgroundColor" red="0.36809864949999999" green="0.16668895319999999" blue="0.78993055560000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S8a-7I-1TM">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S8a-7I-1TM" userLabel="NombreTxt">
                                 <rect key="frame" x="124" y="302" width="172" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BKF-SH-6Sh">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BKF-SH-6Sh" userLabel="EdadTxt">
                                 <rect key="frame" x="164" y="361" width="93" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -118,6 +119,9 @@
                                     <color key="titleColor" red="0.36809864949999999" green="0.16668895319999999" blue="0.78993055560000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.36809864949999999" green="0.16668895319999999" blue="0.78993055560000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnEditar:" destination="07U-u3-heP" eventType="touchUpInside" id="6d7-GI-bwu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgS-0a-qQ5" userLabel="MenosTransp">
                                 <rect key="frame" x="33" y="498" width="77" height="32"/>
@@ -152,17 +156,91 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="EdadShowView" destination="p9A-gB-MiP" id="SoH-eB-VW0"/>
+                        <outlet property="EdadTxt" destination="BKF-SH-6Sh" id="rY4-CQ-2f6"/>
                         <outlet property="ImageShowView" destination="vKu-lx-0ZE" id="urE-eV-b0V"/>
                         <outlet property="NombreShowView" destination="uqh-H7-zDE" id="yP7-fF-WTc"/>
+                        <outlet property="NombreTxt" destination="S8a-7I-1TM" id="nfO-yC-FBJ"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="LigaBienvenido" id="fh8-CV-X7X"/>
+                        <segue destination="oJ7-yr-9eh" kind="modal" identifier="LigaMenuEditar" id="Brs-8s-Nsx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Nt-3I-RPn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="815" y="315"/>
+            <point key="canvasLocation" x="930" y="361"/>
+        </scene>
+        <!--Menu Editar-->
+        <scene sceneID="Ce4-Bk-tIv">
+            <objects>
+                <viewController id="oJ7-yr-9eh" customClass="MenuEditar" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uRr-iz-d1Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="FX9-K5-K6V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rgp-vB-r5Y" customClass="Menu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnK-Bp-Qrw">
+                                <rect key="frame" x="65" y="151" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w42-Ny-KQx">
+                                <rect key="frame" x="65" y="229" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fte-q3-d2l" userLabel="TxtNomEdit">
+                                <rect key="frame" x="97" y="180" width="192" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYN-X9-y37">
+                                <rect key="frame" x="103" y="391" width="130" height="30"/>
+                                <color key="backgroundColor" red="0.36809864949999999" green="0.16668895319999999" blue="0.78993055560000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Guardar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Guardar:" destination="oJ7-yr-9eh" eventType="touchUpInside" id="TCA-Kq-2VH"/>
+                                    <action selector="btnGuardar:" destination="oJ7-yr-9eh" eventType="touchUpInside" id="OSz-ci-1sA"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qnE-hw-oZ6" userLabel="TxtEdadEdit">
+                                <rect key="frame" x="97" y="269" width="192" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EDITAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkk-CZ-qmb">
+                                <rect key="frame" x="50" y="42" width="220" height="54"/>
+                                <color key="backgroundColor" red="0.12482397994581357" green="0.18346945971898054" blue="0.78993055560000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.37140243309999998" green="0.68169084639999999" blue="0.91272095959999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="TxtEdadEdit" destination="qnE-hw-oZ6" id="oj0-Cr-Jbt"/>
+                        <outlet property="TxtNomEdit" destination="fte-q3-d2l" id="c9Q-yM-ZaX"/>
+                        <segue destination="07U-u3-heP" kind="modal" identifier="LigaShowView" id="yuT-4X-4DZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uj4-zZ-xms" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1429" y="361"/>
         </scene>
     </scenes>
     <resources>
         <image name="simpson.png" width="320" height="266"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yuT-4X-4DZ"/>
+    </inferredMetricsTieBreakers>
 </document>
