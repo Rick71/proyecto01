@@ -20,6 +20,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    if (inicializada >! 1) {
+        
+    
+    
     imagen=0;
     
     arregloImagenes = [[NSMutableArray alloc]
@@ -55,7 +59,11 @@ arregloGlobal = [NSMutableArray arrayWithObjects:
                  arregloNombre,
                  arregloEdad,
                  nil];
+        inicializada =1;
+    }
+
 }
+    
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
